@@ -4,6 +4,20 @@ Android translation prototype focused on practical multilingual communication th
 
 The project was developed as a functional Social Service prototype and as a portfolio project. Its current goal is to provide a compact translation flow for **Spanish, English, and French**, with local/on-device processing whenever the platform and installed models allow it.
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/01-translation-tts.jpg" width="30%" alt="Spanish to English translation with Text-to-Speech playback">
+  <img src="docs/screenshots/02-detect-editing.jpg" width="30%" alt="Automatic language detection and direct text editing">
+  <img src="docs/screenshots/03-language-models.jpg" width="30%" alt="Vosk language model management">
+</p>
+
+<p align="center">
+  <em>Translation + TTS · Detect mode + direct editing · Local Vosk model management</em>
+</p>
+
+The screenshots show the current prototype running on a physical Android device: normal Spanish-to-English translation with speech playback, automatic source-language detection while editing text, and the installed/bundled Vosk language-model view.
+
 ## Current features
 
 - Text translation between Spanish, English, and French.
