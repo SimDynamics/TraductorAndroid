@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">TraductorAndroid</string>
+
+    <!-- Idiomas -->
+    <string name="idioma_espanol">Español</string>
+    <string name="idioma_ingles">Inglés</string>
+    <string name="idioma_frances">Francés</string>
+
+    <!-- Acciones -->
+    <string name="accion_detectar">Detectar</string>
+    <string name="accion_mas">Más ▾</string>
+    <string name="accion_terminar">Terminar</string>
+    <string name="accion_pegar">Pegar texto</string>
+    <string name="accion_copiar">Copiar traducción</string>
+    <string name="accion_editar">Editar texto</string>
+    <string name="accion_limpiar">Limpiar texto</string>
+    <string name="accion_escuchar_traduccion">Escuchar traducción</string>
+    <string name="accion_detener_audio">Detener reproducción</string>
+    <string name="accion_opciones">Opciones</string>
+    <string name="accion_intercambiar">Intercambiar idiomas</string>
+    <string name="accion_mantener_hablar">Mantén presionado para hablar</string>
+    <string name="accion_cerrar">Cerrar</string>
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="accion_descargar">Descargar</string>
+
+    <!-- Funciones todavía pendientes -->
+    <string name="opciones_proximo_paso">Próximamente.</string>
+    <string name="deteccion_proximo_paso">La detección automática se configurará posteriormente</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_texto_reconocido">Texto reconocido...</string>
+    <string name="placeholder_traduccion">Traducción...</string>
+
+    <!-- Estados generales -->
+    <string name="estado_preparando">Preparando...</string>
+    <string name="estado_listo">Listo. Mantén presionado para hablar</string>
+    <string name="estado_esperar">Espera a que termine la operación actual</string>
+    <string name="estado_cambiando_idioma">Cambiando idioma...</string>
+
+    <!-- Micrófono y reconocimiento -->
+    <string name="permiso_microfono_necesario">El permiso de micrófono es necesario para reconocer voz</string>
+    <string name="estado_escuchando">Escuchando...</string>
+    <string name="estado_finalizando">Finalizando reconocimiento...</string>
+    <string name="estado_no_voz">No se detectó voz</string>
+    <string name="reconocimiento_no_iniciado">No fue posible iniciar el reconocimiento</string>
+    <string name="reconocimiento_error">Error de reconocimiento: %1$s</string>
+    <string name="reconocimiento_error_inicio">Error al iniciar reconocimiento: %1$s</string>
+    <string name="reconocimiento_timeout">Tiempo de escucha finalizado</string>
+    <string name="reconocimiento_modelo_no_listo">El modelo de %1$s todavía no está listo</string>
+
+    <!-- Portapapeles -->
+    <string name="estado_portapapeles_vacio">El portapapeles está vacío</string>
+    <string name="estado_portapapeles_sin_texto">El portapapeles no contiene texto</string>
+    <string name="estado_sin_traduccion_copiar">Todavía no existe una traducción para copiar</string>
+    <string name="estado_traduccion_copiada">Traducción copiada</string>
+    <string name="etiqueta_portapapeles_traduccion">Traducción</string>
+
+    <!-- Vosk -->
+    <string name="modelo_cargando">Cargando modelo de %1$s...</string>
+    <string name="modelo_sin_configurar">No existe un modelo configurado para %1$s</string>
+    <string name="modelo_listo">Modelo de %1$s listo</string>
+    <string name="modelo_error_carga">Error al cargar el modelo: %1$s</string>
+    <string name="modelo_descargando_idioma">El modelo de %1$s todavía se está descargando</string>
+    <string name="modelo_no_instalado_idioma">El modelo de %1$s todavía no está instalado</string>
+    <string name="modelo_no_disponible_idioma">El modelo de %1$s no está disponible</string>
+
+    <!-- Traducción -->
+    <string name="traduccion_preparando">Preparando traducción %1$s → %2$s...</string>
+    <string name="modelo_traduccion_listo">Modelo de traducción listo</string>
+    <string name="modelo_traduccion_no_listo">El modelo de traducción todavía no está listo</string>
+    <string name="traduccion_error_preparar">Error al preparar traducción: %1$s</string>
+    <string name="estado_traduciendo">Traduciendo...</string>
+    <string name="estado_traduccion_lista">Traducción lista</string>
+    <string name="traduccion_error">Error al traducir: %1$s</string>
+
+    <!-- TextToSpeech -->
+    <string name="tts_inicio_error">No fue posible iniciar la síntesis de voz</string>
+    <string name="tts_no_listo">La síntesis de voz todavía no está lista</string>
+    <string name="tts_sin_traduccion">No existe una traducción para reproducir</string>
+    <string name="tts_sin_traduccion_actual">Todavía no existe una traducción para escuchar</string>
+    <string name="tts_preparando_voz">Preparando voz en %1$s...</string>
+    <string name="tts_motor_no_disponible">El motor de voz no está disponible</string>
+    <string name="tts_voz_no_disponible">La voz de %1$s no está disponible</string>
+    <string name="estado_reproduciendo">Reproduciendo...</string>
+    <string name="error_reproducir_traduccion">No fue posible reproducir la traducción</string>
+
+    <!-- Selector -->
+    <string name="dialogo_idioma_origen">Idioma de origen</string>
+    <string name="dialogo_idioma_destino">Idioma de destino</string>
+    <string name="selector_sin_idiomas">No hay otros idiomas instalados</string>
+
+    <!-- Gestor -->
+    <string name="dialogo_idiomas_modelos">Idiomas y modelos</string>
+
+    <string name="modelo_integrado">Integrado</string>
+    <string name="modelo_instalado">Instalado</string>
+    <string name="modelo_descargando">Descargando / esperando Wi-Fi</string>
+    <string name="modelo_no_disponible">No disponible</string>
+    <string name="modelo_experimental">Experimental en móvil</string>
+
+    <string name="modelo_espanol_ligero">Español ligero</string>
+    <string name="modelo_ingles_ligero">Inglés ligero</string>
+    <string name="modelo_frances_ligero">Francés ligero</string>
+    <string name="modelo_espanol_pesado">Español pesado</string>
+
+    <!-- Descargas -->
+    <string name="descarga_tamano">Tamaño aproximado: %1$s</string>
+    <string name="descarga_solo_wifi">Por seguridad, esta descarga utiliza solamente Wi-Fi. Si no hay Wi-Fi disponible, quedará en espera.</string>
+    <string name="descarga_wifi_datos">Se permite Wi-Fi o datos móviles.</string>
+
+    <string name="descarga_ya_en_curso">Ya existe una descarga de modelo en curso</string>
+    <string name="descarga_sin_url">Este modelo no tiene una descarga configurada</string>
+    <string name="descarga_almacenamiento_no_disponible">No está disponible el almacenamiento para descargas</string>
+    <string name="descarga_error_crear_carpeta">No fue posible crear la carpeta de descarga</string>
+
+    <string name="descarga_notificacion_titulo">Modelo %1$s</string>
+    <string name="descarga_notificacion_descripcion">Modelo de reconocimiento para TraductorAndroid</string>
+
+    <string name="descarga_modelo_en_curso">Descargando %1$s...</string>
+    <string name="descarga_iniciada_wifi">Descarga iniciada. Solo Wi-Fi.</string>
+    <string name="descarga_error_inicio">Error al iniciar descarga: %1$s</string>
+    <string name="descarga_modelo_no_identificado">La descarga terminó, pero no se pudo identificar el modelo</string>
+    <string name="descarga_fallo">La descarga del modelo falló</string>
+    <string name="descarga_pendiente">Modelo %1$s: descarga pendiente o en curso</string>
+
+    <!-- Instalación -->
+    <string name="modelo_instalando">Instalando %1$s...</string>
+    <string name="modelo_instalado_correctamente">%1$s instalado correctamente</string>
+    <string name="modelo_error_instalacion">Error al instalar modelo: %1$s</string>
+
+    <!-- Errores internos que pueden llegar al usuario -->
+    <string name="error_carpeta_descargas_no_disponible">No está disponible la carpeta de descargas</string>
+    <string name="error_archivo_descargado_no_encontrado">No se encontró el archivo descargado</string>
+    <string name="error_crear_carpeta_modelos">No fue posible crear la carpeta de modelos</string>
+    <string name="error_crear_carpeta_temporal">No fue posible crear la carpeta temporal</string>
+    <string name="error_zip_estructura">El ZIP contiene una estructura inesperada</string>
+    <string name="error_zip_ruta">Se detectó una ruta ZIP no segura</string>
+    <string name="error_crear_carpeta_modelo">No se pudo crear una carpeta del modelo</string>
+    <string name="error_modelo_incompleto">El modelo descargado está incompleto</string>
+    <string name="error_mover_modelo">No se pudo mover el modelo a su ubicación definitiva</string>
+
+    <!-- Diagnóstico de detección automática -->
+    <string name="deteccion_diagnostico_titulo">Diagnóstico de detección automática</string>
+
+    <string name="deteccion_api_android">Android API: %1$d</string>
+    <string name="deteccion_reconocimiento_sistema">Reconocimiento del sistema: %1$s</string>
+    <string name="deteccion_reconocimiento_local">Reconocimiento local: %1$s</string>
+    <string name="deteccion_api_idioma">API de detección de idioma: %1$s</string>
+    <string name="deteccion_consulta_soporte">Consulta avanzada de soporte: %1$s</string>
+
+    <string name="deteccion_idiomas_instalados">Idiomas locales instalados: %1$s</string>
+    <string name="deteccion_idiomas_descargables">Idiomas locales descargables: %1$s</string>
+    <string name="deteccion_idiomas_pendientes">Idiomas con descarga pendiente: %1$s</string>
+
+    <string name="deteccion_si">Sí</string>
+    <string name="deteccion_no">No</string>
+    <string name="deteccion_error">Error de consulta: código %1$d</string>
+    <string name="deteccion_no_comprobable">El servicio no permite comprobar esta capacidad.</string>
+
+    <!-- Preparación de modelos para detección automática -->
+    <string name="deteccion_preparando_modelos">Comprobando modelos locales de detección...</string>
+    <string name="deteccion_preparando_modelo">Preparando reconocimiento local de %1$s...</string>
+    <string name="deteccion_descarga_progreso">%1$s: %2$d%%</string>
+    <string name="deteccion_modelo_programado">La descarga de %1$s quedó programada.</string>
+    <string name="deteccion_modelos_listos">Los modelos locales necesarios están preparados.</string>
+    <string name="deteccion_descarga_error">No fue posible preparar %1$s. Código de error: %2$d</string>
+    <string name="deteccion_local_no_disponible">El reconocimiento local no está disponible en este dispositivo.</string>
+
+    <string name="estado_escuchando_android">Android · Escuchando...</string>
+
+    <string name="reconocimiento_sin_motor_disponible">No hay un motor de reconocimiento disponible para %1$s. Abre Más para instalar uno.</string>
+
+    <string name="deteccion_requiere_android13">La detección automática de idioma requiere Android 13 o superior.</string>
+    <string name="deteccion_android_no_disponible">La detección automática de Android no está disponible en este dispositivo.</string>
+    <string name="deteccion_modelos_insuficientes">Instala al menos dos idiomas de reconocimiento de Android para utilizar Detectar.</string>
+    <string name="deteccion_lista_hablar">Detección lista. Mantén presionado el micrófono y habla.</string>
+    <string name="deteccion_idioma_detectado">Idioma detectado: %1$s</string>
+    <string name="deteccion_no_identificada">No se pudo identificar el idioma hablado.</string>
+
+    <string name="deteccion_audio_capturado">Audio de detección capturado: %1$.1f s. Listo para analizar.</string>
+
+    <string name="deteccion_analizando_idioma">Analizando el audio completo como %1$s...</string>
+    <string name="deteccion_prueba_completada">Prueba completada con %1$s. Revisa el texto reconocido.</string>
+
+    <string name="descarga_sin_conexion">No hay una conexión a Internet disponible.</string>
+
+    <string name="descarga_confirmacion_red">Tamaño aproximado: %1$s.\n\nLa descarga se realizará mediante Wi-Fi.</string>
+
+    <string name="descarga_advertencia_datos_moviles">No hay Wi-Fi disponible. La descarga utilizará datos móviles y puede consumir una cantidad importante de tu plan de datos.\n\nTamaño aproximado: %1$s.\n\n¿Deseas continuar?</string>
+
+    <string name="descarga_iniciada_datos">Descarga iniciada mediante datos móviles.</string>
+
+    <string name="accion_finalizar_edicion">Finalizar edición</string>
+
+</resources>

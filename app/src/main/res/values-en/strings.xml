@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">TraductorAndroid</string>
+
+    <string name="idioma_espanol">Spanish</string>
+    <string name="idioma_ingles">English</string>
+    <string name="idioma_frances">French</string>
+
+    <string name="accion_detectar">Detect</string>
+    <string name="accion_mas">More ▾</string>
+    <string name="accion_terminar">Done</string>
+    <string name="accion_pegar">Paste text</string>
+    <string name="accion_copiar">Copy translation</string>
+    <string name="accion_editar">Edit text</string>
+    <string name="accion_limpiar">Clear text</string>
+    <string name="accion_escuchar_traduccion">Listen to translation</string>
+    <string name="accion_detener_audio">Stop playback</string>
+    <string name="accion_opciones">Options</string>
+    <string name="accion_intercambiar">Swap languages</string>
+    <string name="accion_mantener_hablar">Hold to speak</string>
+    <string name="accion_cerrar">Close</string>
+    <string name="accion_cancelar">Cancel</string>
+    <string name="accion_descargar">Download</string>
+
+    <string name="opciones_proximo_paso">Coming soon.</string>
+    <string name="deteccion_proximo_paso">Automatic detection will be configured later</string>
+
+    <string name="placeholder_texto_reconocido">Recognized text...</string>
+    <string name="placeholder_traduccion">Translation...</string>
+
+    <string name="estado_preparando">Preparing...</string>
+    <string name="estado_listo">Ready. Hold to speak</string>
+    <string name="estado_esperar">Wait for the current operation to finish</string>
+    <string name="estado_cambiando_idioma">Changing language...</string>
+
+    <string name="permiso_microfono_necesario">Microphone permission is required for speech recognition</string>
+    <string name="estado_escuchando">Listening...</string>
+    <string name="estado_finalizando">Finishing recognition...</string>
+    <string name="estado_no_voz">No speech detected</string>
+    <string name="reconocimiento_no_iniciado">Unable to start recognition</string>
+    <string name="reconocimiento_error">Recognition error: %1$s</string>
+    <string name="reconocimiento_error_inicio">Error starting recognition: %1$s</string>
+    <string name="reconocimiento_timeout">Listening timed out</string>
+    <string name="reconocimiento_modelo_no_listo">The %1$s model is not ready yet</string>
+
+    <string name="estado_portapapeles_vacio">The clipboard is empty</string>
+    <string name="estado_portapapeles_sin_texto">The clipboard does not contain text</string>
+    <string name="estado_sin_traduccion_copiar">There is no translation to copy yet</string>
+    <string name="estado_traduccion_copiada">Translation copied</string>
+    <string name="etiqueta_portapapeles_traduccion">Translation</string>
+
+    <string name="modelo_cargando">Loading %1$s model...</string>
+    <string name="modelo_sin_configurar">No model is configured for %1$s</string>
+    <string name="modelo_listo">%1$s model ready</string>
+    <string name="modelo_error_carga">Error loading model: %1$s</string>
+    <string name="modelo_descargando_idioma">The %1$s model is still downloading</string>
+    <string name="modelo_no_instalado_idioma">The %1$s model is not installed yet</string>
+    <string name="modelo_no_disponible_idioma">The %1$s model is not available</string>
+
+    <string name="traduccion_preparando">Preparing translation %1$s → %2$s...</string>
+    <string name="modelo_traduccion_listo">Translation model ready</string>
+    <string name="modelo_traduccion_no_listo">The translation model is not ready yet</string>
+    <string name="traduccion_error_preparar">Error preparing translation: %1$s</string>
+    <string name="estado_traduciendo">Translating...</string>
+    <string name="estado_traduccion_lista">Translation ready</string>
+    <string name="traduccion_error">Translation error: %1$s</string>
+
+    <string name="tts_inicio_error">Unable to initialize text-to-speech</string>
+    <string name="tts_no_listo">Text-to-speech is not ready yet</string>
+    <string name="tts_sin_traduccion">There is no translation to play</string>
+    <string name="tts_sin_traduccion_actual">There is no translation to listen to yet</string>
+    <string name="tts_preparando_voz">Preparing %1$s voice...</string>
+    <string name="tts_motor_no_disponible">The speech engine is not available</string>
+    <string name="tts_voz_no_disponible">The %1$s voice is not available</string>
+    <string name="estado_reproduciendo">Playing...</string>
+    <string name="error_reproducir_traduccion">Unable to play the translation</string>
+
+    <string name="dialogo_idioma_origen">Source language</string>
+    <string name="dialogo_idioma_destino">Target language</string>
+    <string name="selector_sin_idiomas">No other languages are installed</string>
+
+    <string name="dialogo_idiomas_modelos">Languages and models</string>
+
+    <string name="modelo_integrado">Built in</string>
+    <string name="modelo_instalado">Installed</string>
+    <string name="modelo_descargando">Downloading / waiting for Wi-Fi</string>
+    <string name="modelo_no_disponible">Not available</string>
+    <string name="modelo_experimental">Experimental on mobile</string>
+
+    <string name="modelo_espanol_ligero">Spanish lightweight</string>
+    <string name="modelo_ingles_ligero">English lightweight</string>
+    <string name="modelo_frances_ligero">French lightweight</string>
+    <string name="modelo_espanol_pesado">Spanish large</string>
+
+    <string name="descarga_tamano">Approximate size: %1$s</string>
+    <string name="descarga_solo_wifi">For safety, this download uses Wi-Fi only. If Wi-Fi is unavailable, it will wait.</string>
+    <string name="descarga_wifi_datos">Wi-Fi or mobile data is allowed.</string>
+
+    <string name="descarga_ya_en_curso">A model download is already in progress</string>
+    <string name="descarga_sin_url">This model does not have a configured download</string>
+    <string name="descarga_almacenamiento_no_disponible">Download storage is not available</string>
+    <string name="descarga_error_crear_carpeta">Unable to create the download folder</string>
+
+    <string name="descarga_notificacion_titulo">%1$s model</string>
+    <string name="descarga_notificacion_descripcion">Speech recognition model for TraductorAndroid</string>
+
+    <string name="descarga_modelo_en_curso">Downloading %1$s...</string>
+    <string name="descarga_iniciada_wifi">Download started. Wi-Fi only.</string>
+    <string name="descarga_error_inicio">Error starting download: %1$s</string>
+    <string name="descarga_modelo_no_identificado">The download finished, but the model could not be identified</string>
+    <string name="descarga_fallo">The model download failed</string>
+    <string name="descarga_pendiente">%1$s model: download pending or in progress</string>
+
+    <string name="modelo_instalando">Installing %1$s...</string>
+    <string name="modelo_instalado_correctamente">%1$s installed successfully</string>
+    <string name="modelo_error_instalacion">Error installing model: %1$s</string>
+
+    <string name="error_carpeta_descargas_no_disponible">The downloads folder is not available</string>
+    <string name="error_archivo_descargado_no_encontrado">The downloaded file was not found</string>
+    <string name="error_crear_carpeta_modelos">Unable to create the models folder</string>
+    <string name="error_crear_carpeta_temporal">Unable to create the temporary folder</string>
+    <string name="error_zip_estructura">The ZIP file has an unexpected structure</string>
+    <string name="error_zip_ruta">An unsafe ZIP path was detected</string>
+    <string name="error_crear_carpeta_modelo">Unable to create a model folder</string>
+    <string name="error_modelo_incompleto">The downloaded model is incomplete</string>
+    <string name="error_mover_modelo">Unable to move the model to its final location</string>
+
+    <!-- Automatic detection diagnostics -->
+    <string name="deteccion_diagnostico_titulo">Automatic detection diagnostics</string>
+
+    <string name="deteccion_api_android">Android API: %1$d</string>
+    <string name="deteccion_reconocimiento_sistema">System speech recognition: %1$s</string>
+    <string name="deteccion_reconocimiento_local">On-device recognition: %1$s</string>
+    <string name="deteccion_api_idioma">Language detection API: %1$s</string>
+    <string name="deteccion_consulta_soporte">Advanced support check: %1$s</string>
+
+    <string name="deteccion_idiomas_instalados">Installed on-device languages: %1$s</string>
+    <string name="deteccion_idiomas_descargables">Downloadable on-device languages: %1$s</string>
+    <string name="deteccion_idiomas_pendientes">Languages pending download: %1$s</string>
+
+    <string name="deteccion_si">Yes</string>
+    <string name="deteccion_no">No</string>
+    <string name="deteccion_error">Support check error: code %1$d</string>
+    <string name="deteccion_no_comprobable">The service does not allow this capability to be checked.</string>
+
+    <!-- Models for automatic language detection -->
+    <string name="deteccion_preparando_modelos">Checking local detection models...</string>
+    <string name="deteccion_preparando_modelo">Preparing local recognition for %1$s...</string>
+    <string name="deteccion_descarga_progreso">%1$s: %2$d%%</string>
+    <string name="deteccion_modelo_programado">The %1$s download has been scheduled.</string>
+    <string name="deteccion_modelos_listos">The required local models are ready.</string>
+    <string name="deteccion_descarga_error">Unable to prepare %1$s. Error code: %2$d</string>
+    <string name="deteccion_local_no_disponible">On-device recognition is not available on this device.</string>
+
+    <string name="estado_escuchando_android">Android · Listening...</string>
+
+    <string name="reconocimiento_sin_motor_disponible">There is no recognition engine available for %1$s. Open More to install one.</string>
+
+    <string name="deteccion_requiere_android13">Automatic language detection requires Android 13 or later.</string>
+    <string name="deteccion_android_no_disponible">Android automatic language detection is not available on this device.</string>
+    <string name="deteccion_modelos_insuficientes">Install at least two Android recognition languages to use Detect.</string>
+    <string name="deteccion_lista_hablar">Detection ready. Hold the microphone and speak.</string>
+    <string name="deteccion_idioma_detectado">Detected language: %1$s</string>
+    <string name="deteccion_no_identificada">The spoken language could not be identified.</string>
+
+    <string name="deteccion_audio_capturado">Detection audio captured: %1$.1f s. Ready to analyze.</string>
+
+    <string name="deteccion_analizando_idioma">Analyzing the complete audio as %1$s...</string>
+    <string name="deteccion_prueba_completada">Test completed with %1$s. Check the recognized text.</string>
+
+    <string name="descarga_sin_conexion">No Internet connection is available.</string>
+
+    <string name="descarga_confirmacion_red">Approximate size: %1$s.\n\nThe download will use Wi-Fi.</string>
+
+    <string name="descarga_advertencia_datos_moviles">Wi-Fi is not available. The download will use mobile data and may consume a significant amount of your data plan.\n\nApproximate size: %1$s.\n\nDo you want to continue?</string>
+
+    <string name="descarga_iniciada_datos">Download started using mobile data.</string>
+
+    <string name="accion_finalizar_edicion">Finish editing</string>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">TraductorAndroid</string>
+
+    <string name="idioma_espanol">Espagnol</string>
+    <string name="idioma_ingles">Anglais</string>
+    <string name="idioma_frances">Français</string>
+
+    <string name="accion_detectar">Détecter</string>
+    <string name="accion_mas">Plus ▾</string>
+    <string name="accion_terminar">Terminer</string>
+    <string name="accion_pegar">Coller le texte</string>
+    <string name="accion_copiar">Copier la traduction</string>
+    <string name="accion_editar">Modifier le texte</string>
+    <string name="accion_limpiar">Effacer le texte</string>
+    <string name="accion_escuchar_traduccion">Écouter la traduction</string>
+    <string name="accion_detener_audio">Arrêter la lecture</string>
+    <string name="accion_opciones">Options</string>
+    <string name="accion_intercambiar">Inverser les langues</string>
+    <string name="accion_mantener_hablar">Maintenez pour parler</string>
+    <string name="accion_cerrar">Fermer</string>
+    <string name="accion_cancelar">Annuler</string>
+    <string name="accion_descargar">Télécharger</string>
+
+    <string name="opciones_proximo_paso">Prochainement.</string>
+    <string name="deteccion_proximo_paso">La détection automatique sera configurée ultérieurement</string>
+
+    <string name="placeholder_texto_reconocido">Texte reconnu...</string>
+    <string name="placeholder_traduccion">Traduction...</string>
+
+    <string name="estado_preparando">Préparation...</string>
+    <string name="estado_listo">Prêt. Maintenez pour parler</string>
+    <string name="estado_esperar">Attendez la fin de l’opération en cours</string>
+    <string name="estado_cambiando_idioma">Changement de langue...</string>
+
+    <string name="permiso_microfono_necesario">L’autorisation du microphone est nécessaire pour reconnaître la voix</string>
+    <string name="estado_escuchando">Écoute...</string>
+    <string name="estado_finalizando">Finalisation de la reconnaissance...</string>
+    <string name="estado_no_voz">Aucune parole détectée</string>
+    <string name="reconocimiento_no_iniciado">Impossible de démarrer la reconnaissance</string>
+    <string name="reconocimiento_error">Erreur de reconnaissance : %1$s</string>
+    <string name="reconocimiento_error_inicio">Erreur au démarrage de la reconnaissance : %1$s</string>
+    <string name="reconocimiento_timeout">Temps d’écoute écoulé</string>
+    <string name="reconocimiento_modelo_no_listo">Le modèle %1$s n’est pas encore prêt</string>
+
+    <string name="estado_portapapeles_vacio">Le presse-papiers est vide</string>
+    <string name="estado_portapapeles_sin_texto">Le presse-papiers ne contient pas de texte</string>
+    <string name="estado_sin_traduccion_copiar">Aucune traduction à copier pour le moment</string>
+    <string name="estado_traduccion_copiada">Traduction copiée</string>
+    <string name="etiqueta_portapapeles_traduccion">Traduction</string>
+
+    <string name="modelo_cargando">Chargement du modèle %1$s...</string>
+    <string name="modelo_sin_configurar">Aucun modèle n’est configuré pour %1$s</string>
+    <string name="modelo_listo">Modèle %1$s prêt</string>
+    <string name="modelo_error_carga">Erreur de chargement du modèle : %1$s</string>
+    <string name="modelo_descargando_idioma">Le modèle %1$s est toujours en cours de téléchargement</string>
+    <string name="modelo_no_instalado_idioma">Le modèle %1$s n’est pas encore installé</string>
+    <string name="modelo_no_disponible_idioma">Le modèle %1$s n’est pas disponible</string>
+
+    <string name="traduccion_preparando">Préparation de la traduction %1$s → %2$s...</string>
+    <string name="modelo_traduccion_listo">Modèle de traduction prêt</string>
+    <string name="modelo_traduccion_no_listo">Le modèle de traduction n’est pas encore prêt</string>
+    <string name="traduccion_error_preparar">Erreur lors de la préparation de la traduction : %1$s</string>
+    <string name="estado_traduciendo">Traduction...</string>
+    <string name="estado_traduccion_lista">Traduction prête</string>
+    <string name="traduccion_error">Erreur de traduction : %1$s</string>
+
+    <string name="tts_inicio_error">Impossible d’initialiser la synthèse vocale</string>
+    <string name="tts_no_listo">La synthèse vocale n’est pas encore prête</string>
+    <string name="tts_sin_traduccion">Aucune traduction à lire</string>
+    <string name="tts_sin_traduccion_actual">Aucune traduction à écouter pour le moment</string>
+    <string name="tts_preparando_voz">Préparation de la voix %1$s...</string>
+    <string name="tts_motor_no_disponible">Le moteur vocal n’est pas disponible</string>
+    <string name="tts_voz_no_disponible">La voix %1$s n’est pas disponible</string>
+    <string name="estado_reproduciendo">Lecture...</string>
+    <string name="error_reproducir_traduccion">Impossible de lire la traduction</string>
+
+    <string name="dialogo_idioma_origen">Langue source</string>
+    <string name="dialogo_idioma_destino">Langue cible</string>
+    <string name="selector_sin_idiomas">Aucune autre langue installée</string>
+
+    <string name="dialogo_idiomas_modelos">Langues et modèles</string>
+
+    <string name="modelo_integrado">Intégré</string>
+    <string name="modelo_instalado">Installé</string>
+    <string name="modelo_descargando">Téléchargement / attente du Wi-Fi</string>
+    <string name="modelo_no_disponible">Non disponible</string>
+    <string name="modelo_experimental">Expérimental sur mobile</string>
+
+    <string name="modelo_espanol_ligero">Espagnol léger</string>
+    <string name="modelo_ingles_ligero">Anglais léger</string>
+    <string name="modelo_frances_ligero">Français léger</string>
+    <string name="modelo_espanol_pesado">Espagnol complet</string>
+
+    <string name="descarga_tamano">Taille approximative : %1$s</string>
+    <string name="descarga_solo_wifi">Par défaut, ce téléchargement utilise uniquement le Wi-Fi. Sans Wi-Fi, il restera en attente.</string>
+    <string name="descarga_wifi_datos">Le Wi-Fi ou les données mobiles sont autorisés.</string>
+
+    <string name="descarga_ya_en_curso">Un téléchargement de modèle est déjà en cours</string>
+    <string name="descarga_sin_url">Ce modèle n’a pas de téléchargement configuré</string>
+    <string name="descarga_almacenamiento_no_disponible">Le stockage destiné aux téléchargements n’est pas disponible</string>
+    <string name="descarga_error_crear_carpeta">Impossible de créer le dossier de téléchargement</string>
+
+    <string name="descarga_notificacion_titulo">Modèle %1$s</string>
+    <string name="descarga_notificacion_descripcion">Modèle de reconnaissance vocale pour TraductorAndroid</string>
+
+    <string name="descarga_modelo_en_curso">Téléchargement de %1$s...</string>
+    <string name="descarga_iniciada_wifi">Téléchargement démarré. Wi-Fi uniquement.</string>
+    <string name="descarga_error_inicio">Erreur au démarrage du téléchargement : %1$s</string>
+    <string name="descarga_modelo_no_identificado">Le téléchargement est terminé, mais le modèle n’a pas pu être identifié</string>
+    <string name="descarga_fallo">Le téléchargement du modèle a échoué</string>
+    <string name="descarga_pendiente">Modèle %1$s : téléchargement en attente ou en cours</string>
+
+    <string name="modelo_instalando">Installation de %1$s...</string>
+    <string name="modelo_instalado_correctamente">%1$s installé correctement</string>
+    <string name="modelo_error_instalacion">Erreur lors de l’installation du modèle : %1$s</string>
+
+    <string name="error_carpeta_descargas_no_disponible">Le dossier de téléchargement n’est pas disponible</string>
+    <string name="error_archivo_descargado_no_encontrado">Le fichier téléchargé est introuvable</string>
+    <string name="error_crear_carpeta_modelos">Impossible de créer le dossier des modèles</string>
+    <string name="error_crear_carpeta_temporal">Impossible de créer le dossier temporaire</string>
+    <string name="error_zip_estructura">Le fichier ZIP contient une structure inattendue</string>
+    <string name="error_zip_ruta">Un chemin ZIP non sécurisé a été détecté</string>
+    <string name="error_crear_carpeta_modelo">Impossible de créer un dossier du modèle</string>
+    <string name="error_modelo_incompleto">Le modèle téléchargé est incomplet</string>
+    <string name="error_mover_modelo">Impossible de déplacer le modèle vers son emplacement définitif</string>
+
+    <!-- Diagnostic de détection automatique -->
+    <string name="deteccion_diagnostico_titulo">Diagnostic de détection automatique</string>
+
+    <string name="deteccion_api_android">API Android : %1$d</string>
+    <string name="deteccion_reconocimiento_sistema">Reconnaissance vocale du système : %1$s</string>
+    <string name="deteccion_reconocimiento_local">Reconnaissance locale : %1$s</string>
+    <string name="deteccion_api_idioma">API de détection de langue : %1$s</string>
+    <string name="deteccion_consulta_soporte">Vérification avancée du support : %1$s</string>
+
+    <string name="deteccion_idiomas_instalados">Langues locales installées : %1$s</string>
+    <string name="deteccion_idiomas_descargables">Langues locales téléchargeables : %1$s</string>
+    <string name="deteccion_idiomas_pendientes">Langues en attente de téléchargement : %1$s</string>
+
+    <string name="deteccion_si">Oui</string>
+    <string name="deteccion_no">Non</string>
+    <string name="deteccion_error">Erreur de vérification : code %1$d</string>
+    <string name="deteccion_no_comprobable">Le service ne permet pas de vérifier cette capacité.</string>
+
+    <!-- Modèles pour la détection automatique -->
+    <string name="deteccion_preparando_modelos">Vérification des modèles locaux de détection...</string>
+    <string name="deteccion_preparando_modelo">Préparation de la reconnaissance locale pour %1$s...</string>
+    <string name="deteccion_descarga_progreso">%1$s : %2$d%%</string>
+    <string name="deteccion_modelo_programado">Le téléchargement de %1$s a été programmé.</string>
+    <string name="deteccion_modelos_listos">Les modèles locaux nécessaires sont prêts.</string>
+    <string name="deteccion_descarga_error">Impossible de préparer %1$s. Code d’erreur : %2$d</string>
+    <string name="deteccion_local_no_disponible">La reconnaissance locale n’est pas disponible sur cet appareil.</string>
+
+    <string name="estado_escuchando_android">Android · Écoute...</string>
+
+    <string name="reconocimiento_sin_motor_disponible">Aucun moteur de reconnaissance n’est disponible pour %1$s. Ouvrez Plus pour en installer un.</string>
+
+    <string name="deteccion_requiere_android13">La détection automatique de la langue nécessite Android 13 ou une version ultérieure.</string>
+    <string name="deteccion_android_no_disponible">La détection automatique de langue Android n’est pas disponible sur cet appareil.</string>
+    <string name="deteccion_modelos_insuficientes">Installez au moins deux langues de reconnaissance Android pour utiliser Détecter.</string>
+    <string name="deteccion_lista_hablar">Détection prête. Maintenez le microphone enfoncé et parlez.</string>
+    <string name="deteccion_idioma_detectado">Langue détectée : %1$s</string>
+    <string name="deteccion_no_identificada">La langue parlée n’a pas pu être identifiée.</string>
+
+    <string name="deteccion_audio_capturado">Audio de détection capturé : %1$.1f s. Prêt à être analysé.</string>
+
+    <string name="deteccion_analizando_idioma">Analyse de l’audio complet en %1$s...</string>
+    <string name="deteccion_prueba_completada">Test terminé en %1$s. Vérifiez le texte reconnu.</string>
+
+    <string name="descarga_sin_conexion">Aucune connexion Internet n’est disponible.</string>
+
+    <string name="descarga_confirmacion_red">Taille approximative : %1$s.\n\nLe téléchargement utilisera le Wi-Fi.</string>
+
+    <string name="descarga_advertencia_datos_moviles">Le Wi-Fi n’est pas disponible. Le téléchargement utilisera les données mobiles et peut consommer une quantité importante de votre forfait.\n\nTaille approximative : %1$s.\n\nVoulez-vous continuer ?</string>
+
+    <string name="descarga_iniciada_datos">Téléchargement démarré avec les données mobiles.</string>
+
+    <string name="accion_finalizar_edicion">Terminer la modification</string>
+
+</resources>

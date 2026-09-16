@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="6dp"
+    android:paddingTop="2dp"
+    android:paddingEnd="6dp"
+    android:paddingBottom="4dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/contenedor_paneles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/texto_estado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- =====================================================
+             ORIGEN
+             ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--
+                Cabecera preparada para el historial.
+
+                La zona izquierda podrá contener varios idiomas.
+                Si algún nombre largo excede el espacio disponible,
+                podrá desplazarse horizontalmente.
+            -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp">
+
+                <!--
+                    Detectar + idioma actual + historial reciente.
+
+                    Todo comparte la misma fila desplazable.
+                    La flecha de intercambio permanece fija a la derecha.
+                -->
+                <HorizontalScrollView
+                    android:id="@+id/scroll_idiomas_origen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fillViewport="false"
+                    android:scrollbars="none"
+                    app:layout_constraintEnd_toStartOf="@id/button_intercambiar_idiomas"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/contenedor_idiomas_origen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingEnd="4dp">
+
+                        <!--
+                            Detectar deja de estar separado.
+                            Ahora forma parte del selector de origen.
+                        -->
+                        <Button
+                            android:id="@+id/button_detectar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="0dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="0dp"
+                            android:text="@string/accion_detectar"
+                            android:textAllCaps="false"
+                            android:textSize="12sp" />
+
+                        <!--
+                            Conservamos este ID porque MainActivity ya lo utiliza.
+
+                            Representará el idioma origen manual actual.
+                        -->
+                        <TextView
+                            android:id="@+id/texto_idioma_origen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:gravity="center"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:text="@string/idioma_espanol"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <!--
+                            Kotlin agregará aquí hasta tres botones más.
+
+                            Junto con el idioma actual:
+                            máximo = 4 idiomas recientes.
+                        -->
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <ImageButton
+                    android:id="@+id/button_intercambiar_idiomas"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/accion_intercambiar"
+                    android:enabled="false"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_intercambiar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/panel_texto_entrada"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--
+                        El ScrollView termina ANTES de la franja inferior.
+                        El texto nunca puede invadir la zona del icono Pegar.
+                    -->
+                    <ScrollView
+                        android:id="@+id/scroll_texto_entrada"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fadeScrollbars="true"
+                        android:fillViewport="true"
+                        android:paddingEnd="4dp"
+                        android:scrollbarDefaultDelayBeforeFade="700"
+                        android:scrollbarFadeDuration="300"
+                        android:scrollbarSize="4dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        app:layout_constraintBottom_toTopOf="@id/barra_acciones_origen"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <EditText
+                            android:id="@+id/texto_entrada"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="top|start"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:paddingStart="12dp"
+                            android:paddingTop="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="12dp"
+                            android:hint="@string/placeholder_texto_reconocido"
+                            android:textSize="17sp" />
+
+                    </ScrollView>
+
+                    <!-- Zona reservada para acciones del texto origen -->
+                    <LinearLayout
+                        android:id="@+id/barra_acciones_origen"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <!-- Pegar -->
+                        <ImageButton
+                            android:id="@+id/button_pegar"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/accion_pegar"
+                            android:padding="6dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_pegar"
+                            app:tint="?attr/colorOnSurface" />
+
+                        <!--
+                            El espacio flexible empuja Limpiar y Editar
+                            hacia la esquina derecha.
+                        -->
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <!-- Limpiar -->
+                        <ImageButton
+                            android:id="@+id/button_limpiar_origen"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/accion_limpiar"
+                            android:padding="6dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_limpiar"
+                            app:tint="?attr/colorOnSurface" />
+
+                        <ImageButton
+                            android:id="@+id/button_terminar_edicion"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/accion_finalizar_edicion"
+                            android:padding="6dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_confirmar"
+                            android:visibility="gone"
+                            app:tint="?attr/colorOnSurface" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp" />
+
+        <!-- =====================================================
+             DESTINO
+             ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--
+                Toda la cabecera queda disponible para el historial
+                del idioma destino.
+            -->
+            <HorizontalScrollView
+                android:id="@+id/scroll_idiomas_destino"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:fillViewport="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/contenedor_idiomas_destino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingEnd="4dp">
+
+                    <!-- Idioma destino actualmente seleccionado -->
+                    <TextView
+                        android:id="@+id/texto_idioma_destino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:text="@string/idioma_ingles"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <!--
+                        Kotlin agregará aquí hasta cinco recientes más.
+
+                        Máximo destino:
+                        6 idiomas.
+                    -->
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/panel_texto_traduccion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="8dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:id="@+id/scroll_texto_traduccion"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:fadeScrollbars="true"
+                        android:fillViewport="true"
+                        android:paddingEnd="4dp"
+                        android:scrollbarDefaultDelayBeforeFade="700"
+                        android:scrollbarFadeDuration="300"
+                        android:scrollbarSize="4dp"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        app:layout_constraintBottom_toTopOf="@id/barra_acciones_destino"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/texto_traduccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="12dp"
+                            android:paddingTop="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="12dp"
+                            android:text="@string/placeholder_traduccion"
+                            android:textSize="17sp" />
+
+                    </ScrollView>
+
+                    <!--
+                        Zona independiente de acciones.
+
+                        Copiar queda a la izquierda.
+                        Escuchar queda a la derecha.
+                    -->
+                    <LinearLayout
+                        android:id="@+id/barra_acciones_destino"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <ImageButton
+                            android:id="@+id/button_copiar"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/accion_copiar"
+                            android:enabled="false"
+                            android:padding="6dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_copiar"
+                            app:tint="?attr/colorOnSurface" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/button_escuchar_traduccion"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/accion_escuchar_traduccion"
+                            android:enabled="false"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_bocina"
+                            app:tint="?attr/colorOnSurface" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- =========================================================
+         ESTADO
+         ========================================================= -->
+
+    <TextView
+        android:id="@+id/texto_estado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/estado_preparando"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/button_escuchar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Más -->
+    <Button
+        android:id="@+id/button_mas"
+        android:layout_width="64dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="@string/accion_mas"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Micrófono -->
+    <ImageButton
+        android:id="@+id/button_escuchar"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/fondo_microfono"
+        android:contentDescription="@string/accion_mantener_hablar"
+        android:enabled="false"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_microfono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Opciones -->
+    <ImageButton
+        android:id="@+id/button_opciones"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/accion_opciones"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_opciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

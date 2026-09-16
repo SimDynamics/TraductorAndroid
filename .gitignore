@@ -1,0 +1,62 @@
+# ============================================================
+# Android / Gradle
+# ============================================================
+
+.gradle/
+.kotlin/
+
+build/
+**/build/
+
+local.properties
+
+.externalNativeBuild/
+**/.externalNativeBuild/
+
+.cxx/
+**/.cxx/
+
+
+# ============================================================
+# Android Studio / IntelliJ IDEA
+# ============================================================
+
+.idea/
+*.iml
+
+
+# ============================================================
+# Archivos generados / capturas
+# ============================================================
+
+captures/
+
+
+# ============================================================
+# Sistema operativo
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# Archivos de firma
+#
+# Nunca deben subirse claves privadas de firma.
+# ============================================================
+
+*.jks
+*.keystore
+
+
+# ============================================================
+# APK / App Bundle generados
+#
+# El APK final, si queremos distribuirlo desde GitHub,
+# se publicará posteriormente como un GitHub Release,
+# no dentro del código fuente.
+# ============================================================
+
+*.apk
+*.aab
