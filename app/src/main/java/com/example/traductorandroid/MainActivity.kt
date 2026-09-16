@@ -944,6 +944,27 @@ class MainActivity :
             iniciarEdicionDirectaTextoOrigen()
         }
 
+        binding.textoEntrada.setOnFocusChangeListener { _, tieneFoco ->
+
+            /*
+             * El foco real del EditText es la fuente definitiva
+             * para saber si estamos escribiendo.
+             *
+             * Así no dependemos únicamente de que Android haya
+             * ejecutado setOnClickListener en un orden concreto.
+             */
+            if (tieneFoco) {
+
+                editandoTextoOrigen =
+                    true
+
+                activarModoVisualEdicionDirecta()
+
+                binding.textoEntrada.isCursorVisible =
+                    true
+            }
+        }
+
         binding.textoEntrada.setOnEditorActionListener { _, actionId, _ ->
 
             if (
@@ -7517,22 +7538,6 @@ class MainActivity :
     }
 
     private fun iniciarEdicionDirectaTextoOrigen() {
-
-        /*
-         * No entramos en edición mientras una operación
-         * que cambia el flujo esté activa.
-         */
-        if (
-            !binding.buttonIntercambiarIdiomas.isEnabled
-        ) {
-
-            binding.textoEstado.text =
-                textoApp(
-                    R.string.estado_esperar
-                )
-
-            return
-        }
 
         editandoTextoOrigen =
             true
